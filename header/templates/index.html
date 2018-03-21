@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        table, th, td {
+            border: 1px solid black;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <title>Header</title>
+    <p> {{ head1 | safe}}</p>
+    <p> {{ head2 }}</p>
+
+
+
+
+</head>
+<body>
+<table style="width:100%">
+
+    {% for i in head3 %}
+    <tr>
+        <td>{{ i.headerType }}</td>
+        <td>{{ i.amount }}</td>
+    </tr>
+    {% endfor %}
+
+    </table>
+
+</body>
+</html>

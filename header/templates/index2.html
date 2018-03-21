@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Excersise 4</title>
+    <script type="text/javascript">
+        function Display() {
+            var name = document.form1.name.value;
+            text = "Thank you " + name + " for your time!";
+            var outputcolor = document.form1.color.value;
+            var output = text.fontcolor(outputcolor);
+            document.write(output)
+        }
+    </script>
+</head>
+<body>
+<form name="form1">
+    <p>Name: <input type="text" name="name"> </p>
+    <p>Address: <input type="text" name="address" ></p>
+    <p>What is your favorite color?
+         <select name="color" >
+             <option value="blue">Blue</option>
+             <option value="green">Green</option>
+             <option value="red">Red</option>
+             <option value="yellow">Yellow</option>
+             <option value="purple">Purple</option>
+         </select>
+    </p>
+    <button type="button" onclick="Display()">Press me</button>
+</form>
+
+</body>
+</html>
